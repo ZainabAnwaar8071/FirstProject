@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridBox</title>
+    <style>
+         .grid-container {
+          max-width: 800px;
+          margin: 40px auto;
+        }
+        .grid-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-box img {
+            width: 100%;
+           height: 150px;
+           object-fit: cover;
+           border-radius: 10px;
+        
+    }
+    .flex-box {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+    .flex-item {
+        padding: 10px 20px;
+        margin-left: 100px;
+     
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .save {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+    .save:hover {
+        background-color: #3e8e41;
+    }
+    .edit {
+        background-color: #03A9F4;
+        color: #fff;
+    }
+    .edit:hover {
+        background-color: #039be5;
+    }
+    .delete {
+        background-color: #f44336;
+        color: #fff;
+    }
+    .delete:hover {
+        background-color: #e91e63;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>GridBox</h1>
+    <div class="grid-container">
+        <div class="GridBox">
+            <img src="image/web coding 1.jpg" height="200px" alt="image 1">
+            <img src="image/web coding 3.jpg" height="200px" alt="image 2">
+            <img src="image/web coding 4.jpg" height="200px" alt="image 3">
+            <img src="image/web coding 5.jpg" height="200px" alt="image 4">
+            <img src="image/web coding 6.jpg" height="200px" alt="image 5">
+            <img src="image/web coding 8.jpg" height="200px" alt="image 6">
+            <img src="image/web coding 9.jpg" height="200px" width="200px" alt="image 7">
+            <img src="image/web coding 10.jpg" height="200px" width="300px" alt="image 8">
+            <img src="image/web coding 11.jpg" height="200px" width="300px" alt="image 9">
+        </div>
+        <div class="flex-box">
+            <div class="flex-item save">Save</div>
+            <div class="flex-item edit">Edit</div>
+            <div class="flex-item delete">Delete</div>
+        </div>
+    </div>
+   
+   
+</body>
+</html>
